@@ -1,6 +1,6 @@
 [package]
 name = "efes"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Klim Tsoutsman <klimusha@gmail.com>"]
 edition = "2018"
 description = "A collection of macros to simplify testing involving filesystems"

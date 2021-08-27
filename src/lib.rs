@@ -27,13 +27,13 @@
 macro_rules! gen_fs {
         ($root:ident => $f:ident $($tail:tt)*) => {
             ::std::fs::File::create($root.join(stringify!($f))).unwrap();
-            gen_fs!($root => $($tail)*);
+            ::efes::gen_fs!($root => $($tail)*);
         };
         ($root:ident => ($dir:ident : $($inner:tt)*)$($tail:tt)*) => {
             ::std::fs::create_dir($root.join(stringify!($dir))).unwrap();
             let $dir = $root.join(stringify!($dir));
-            gen_fs!($dir => $($inner)*);
-            gen_fs!($root => $($tail)*);
+            ::efes::gen_fs!($dir => $($inner)*);
+            ::efes::gen_fs!($root => $($tail)*);
         };
         ($root:ident => ) => {};
 }
