@@ -1,0 +1,10 @@
+[package]
+name = "efes"
+version = "0.1.0"
+edition = "2018"
+description = "A collection of macros to simplify testing involving filesystems"
+repository = "https://github.com/tsoutsman/efes"
+license = "MIT OR Apache-2.0"
+
+[dev-dependencies]
+tempfile = "*"
