@@ -1,10 +1,17 @@
 [package]
 name = "efes"
-version = "0.1.0"
+version = "1.0.0"
+authors = ["Klim Tsoutsman <klimusha@gmail.com>"]
 edition = "2018"
 description = "A collection of macros to simplify testing involving filesystems"
+readme = true
 repository = "https://github.com/tsoutsman/efes"
 license = "MIT OR Apache-2.0"
+keywords = ["fs", "macros", "tests", "filesystem"]
+categories = ["filesystem"]
 
 [dev-dependencies]
-tempfile = "*"
+tempfile = "3.2"
+
+[badges]
+maintenance = { status = "passively-developed" }
